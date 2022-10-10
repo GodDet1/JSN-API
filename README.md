@@ -1,7 +1,7 @@
 ### General
 
-Its an Api service for peoples who loves *Super Heroes*, who wants see their magnificent photos and want to be a little closer to their idols. 
-This service was created with *Node.js+Express* technology for `REST API` and *React*, *React-Redux* and *RTK-Query* technology.
+Its an Api service for peoples who loves **Super Heroes**, who wants see their magnificent photos and want to be a little closer to their idols. 
+This service was created with **Node.js+Express** technology for `REST API` and **React**, **React-Redux** and **RTK-Query** technology.
 It is easy to use. **You can try it!**
 
 
