@@ -9,9 +9,9 @@ It is easy to use. **You can try it!**
 
 ### Start Server
 
-- Execute the command from the `server` folder in the console `npm start` to start server or `npm start:dev` to start develop.  
+- Execute the command from native command line from the `server` folder in the console `npm start` to start server or `npm start:dev` to start develop.  
 
-- Execute the command from the main folder in the console `npm start` to start UI.
+- Execute the command from native command line from the main folder in the console `npm start` to start UI.
 
 ### Super hero infrormation paths
 
