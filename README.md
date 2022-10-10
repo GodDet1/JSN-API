@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+### General
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Its an Api service for peoples who loves *Super Heroes*, who wants see their magnificent photos and want to be a little closer to their idols. 
+This service was created with *Node.js+Express* technology for `REST API` and *React*, *React-Redux* and *RTK-Query* technology.
+It is easy to use. **You can try it!**
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Start Server
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Execute the command from the `server` folder in the console `npm start` to start server or `npm start:dev` to start develop.
 
-### `npm test`
+- Execute the command from the main folder in the console `npm start` to start UI.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Super hero infrormation paths
 
-### `npm run build`
+**GET** : http://localhost:3000/api/super_heroes - get all information about super heroes. 
+**GET** : http://localhost:3000/api/super_heroes/`id` - get information about current super hero. 
+**POST** : http://localhost:3000/api/super_heroes - add super hero to collection. 
+**PUT** : http://localhost:3000/api/super_heroes/`id` - update current super hero information (all filds requiered). 
+**DELETE** : http://localhost:3000/api/super_heroes/`id` - delete super hero.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Super hero image paths
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**PATCH** : http://localhost:3000/api/files/images/`nickname`/`image_path` - add image to super hero gallery.
+**DELETE** : http://localhost:3000/api/files/images/delete/`nickname`/`image_path`  - delete image from super hero gallery.
+**IMAGE** : http://localhost:3000/api/files/download/`nickname`/`image_path`  - delete image from super hero gallery.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+`nickname` - nickname of super hero.
+`image_path` - name and extension saved photo (you can get it from super hero info)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### DB
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In the REST API used MongoDB base. In `.env` file, `DB_SH` parameter, you can add yours path to your DB.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Settings
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`PORT` - port where servers start
+`DB_SH`- connect to **MongoDB**
+`IMAGE_PATH`= path to images folder. (must be created)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
