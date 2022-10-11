@@ -1,9 +1,6 @@
 import { Notify } from 'notiflix';
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { usePostSuperHeroMutation } from '../../Redux/API middleware/SuperHeroDataAPI';
-
-import { createHero } from '../../service/fetchSuperHeroes';
 import SubmitForm from '../SubmitForm/SubmitForm';
 
 function CreateHeroPage() {

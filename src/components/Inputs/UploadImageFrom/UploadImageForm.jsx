@@ -1,6 +1,6 @@
 import React from 'react';
 import { usePatchSuperHeroImageMutation } from '../../../Redux/API middleware/imageSuperHeroAPI';
-import { patchPicture } from '../../../service/fetchSuperHeroes';
+
 
 function UploadImageForm({ nickname, refetch }) {
   const [sendImage] = usePatchSuperHeroImageMutation();
